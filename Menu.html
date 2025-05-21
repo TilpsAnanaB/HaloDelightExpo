@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Halo Delight</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #8b4513;
+        --secondary-color: #a0522d;
+        --background-light: #f4e3cf;
+        --text-color: #2d2d2d;
+        --transition: all 0.3s ease;
+      }
+
+      .menu-section {
+        padding: 8rem 5% 4rem;
+        gap: 8rem;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .image-wrapper {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 30px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        transform: perspective(1000px) rotateY(-5deg);
+        transition: var(--transition);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .menu-content h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: var(--primary-color);
+      }
+
+      .menu-item {
+        background: rgb(247, 218, 157);
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: var(--transition);
+        text-align: center;
+      }
+
+      .menu-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .menu-item h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+      }
+
+      .menu-item p {
+        margin-bottom: 1.5rem;
+        color: #666;
+      }
+
+      .menu-item span {
+        display: inline-block;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+        margin-bottom: 1.5rem;
+      }
+
+      .order-btn {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      .order-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(160, 82, 45, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="halohalo.html" class="logo"> Halo Delight </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav">
+        <ul>
+          <li>
+            <a href="halohalo.html">Home</a>
+          </li>
+          <li><a href="About.html">About</a></li>
+          <li>
+            <a href="Menu.html" style="color: var(--accent-color)">Menu</a>
+          </li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <button class="hamburger" id="hamburger-icon">☰</button>
+      <ul class="nav-list">
+        <li>
+          <a href="halohalo.html">Home</a>
+        </li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Menu.html" style="color: var(--accent-color)">Menu</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <section class="menu-section">
+      <div class="menu-content">
+        <h2>Our Special Menu</h2>
+        <div class="menu-item">
+          <h3>Halo Delights</h3>
+          <p>
+            Enjoy our special mix of choco milk, sweet bananas, beans, pinipig,
+            sago, gulaman, sugar, and chocolate syrup. a tasty and cool treat
+            you'll love that will make your summer unforgettable.
+          </p>
+          <span>₱45</span>
+          <button
+            class="order-btn"
+            onclick="window.open('https://www.facebook.com/share/16Yv12Sdpq/', '_blank')"
+          >
+            Order on Facebook
+          </button>
+        </div>
+      </div>
+
+      <div class="image-wrapper">
+        <img
+          src="halo.jpg"
+          alt="Halo-Halo"
+          class="menu-image"
+          style="transform: scaleX(-1)"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Halo Delight. All rights reserved.</p>
+    </footer>
+    <script src="halo.js"></script>
+  </body>
+</html>
