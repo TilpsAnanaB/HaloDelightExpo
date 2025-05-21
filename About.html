@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Halo Delight</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .about-image {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 30px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        transform: perspective(1000px) rotateY(-5deg);
+        transition: var(--transition);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+      }
+
+      .about-image::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
+        border-radius: 30px;
+        transform: rotate(-3deg);
+        z-index: -1;
+        opacity: 0.1;
+        transition: var(--transition);
+      }
+
+      .about-image:hover::before {
+        transform: rotate(0deg);
+      }
+      .highlight-box {
+        background: rgb(247, 218, 157);
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        margin-top: 2rem;
+        transform: translateY(0);
+        transition: var(--transition);
+      }
+
+      .highlight-box:hover {
+        transform: translateY(-10px);
+      }
+      .about-content h2{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="halohalo.html" class="logo"> Halo Delight </a>
+    
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="halohalo.html">Home</a></li>
+          <li><a href="About.html" style="color: var(--accent-color)">About</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    
+      <!-- Mobile Nav -->
+      <button class="hamburger" id="hamburger-icon">☰</button>
+      <ul class="nav-list">
+        <li><a href="halohalo.html">Home</a></li>
+        <li><a href="About.html" style="color: var(--accent-color)">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </header>
+    
+    <main>
+      <section class="about-section">
+        <div class="about-content">
+          <h2>About Halo-Halo</h2>
+
+          <div class="highlight-box">
+            <i>
+              Experience our unique take on the classic Filipino dessert. Our
+              Halo-Halo stands out with its perfect blend of traditional
+              ingredients and innovative twists, creating a refreshing treat
+              that's both familiar and exciting.
+          
+            </p>
+            <br />
+            <p>  
+              What makes our Halo-Halo special is our commitment to quality
+              ingredients and the perfect balance of flavors, creating a dessert
+              experience that's truly unforgettable.
+            </p>
+        </i>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <img src="halo.jpg" alt="Halo-Halo Dessert" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Halo Delight. All rights reserved.</p>
+    </footer>
+
+    <script src="halo.js"></script>
+  </body>
+</html>
