@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Halo Delight</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .contact-section {
+        padding: 8rem 5% 4rem;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-content {
+        color: #a0522d;
+        background: white;
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        max-width: 600px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        transition: var(--transition);
+      }
+
+      .contact-content:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .contact-content h2 {
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        padding-right: 230px;
+        margin: 1rem 0;
+        background: #eff2f4;
+        border-radius: 12px;
+        transition: var(--transition);
+      }
+
+      .contact-item:hover {
+        transform: translateX(10px);
+        background: #f0f2f5;
+      }
+
+      .contact-icon {
+        font-size: 1.5rem;
+        color: var(--primary);
+        min-width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--secondary);
+        border-radius: 50%;
+      }
+
+      .contact-text {
+        color: var(--text);
+        font-size: 12px;
+      }
+
+      .contact-text a {
+        color: var(--primary);
+        text-decoration: none;
+        transition: var(--transition);
+      }
+
+      .contact-text a:hover {
+        color: #a0522d;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="halohalo.html" class="logo"> Halo Delight </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav">
+        <ul>
+          <li>
+            <a href="halohalo.html">Home</a>
+          </li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li>
+            <a href="Contact.html" style="color: var(--accent-color)"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <button class="hamburger" id="hamburger-icon">☰</button>
+      <ul class="nav-list">
+        <li>
+          <a href="halohalo.html">Home</a>
+        </li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li>
+          <a href="Contact.html" style="color: var(--accent-color)">Contact</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <div class="contact-content">
+          <h2>Get in Touch</h2>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-text">
+              STI College Angeles 2021 T. Aguas St., Angeles, Pampanga
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <a href="tel:+63-09915112299">+63-09915112299</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-text">
+              <a href="mailto:halodelightexpo@gmail.com"
+                >halodelightexpo@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Halo Delight. All rights reserved.</p>
+    </footer>
+
+    <script src="halo.js"></script>
+  </body>
+</html>
