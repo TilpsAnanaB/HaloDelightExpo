@@ -36,13 +36,6 @@
         animation: float 6s ease-in-out infinite;
       }
 
-      .menu-content h2 {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-        color: var(--primary-color);
-      }
-
       .menu-item {
         background: rgb(247, 218, 157);
         padding: 2rem;
@@ -61,6 +54,9 @@
         font-size: 1.5rem;
         margin-bottom: 1rem;
         color: var(--primary-color);
+       color: var(--primary-color);
+       margin-bottom: 1rem;
+      animation: slideIn 1s ease-out;
       }
 
       .menu-item p {
@@ -96,23 +92,29 @@
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(160, 82, 45, 0.3);
       }
+      #sakura {
+        background-image: url("sakura5.png");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+      }
     </style>
   </head>
-  <body>
+  <body id="sakura">
     <header>
-      <a href="halohalo.html" class="logo"> Halo Delight </a>
+      <a href="index.html" class="logo"> Halo Delight </a>
 
       <!-- Desktop Nav -->
       <nav class="desktop-nav">
         <ul>
           <li>
-            <a href="halohalo.html">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li><a href="About.html">About</a></li>
           <li>
-            <a href="Menu.html" style="color: var(--accent-color)">Menu</a>
+            <a href="Menu.html" style="color: var(--accent-color)">Product</a>
           </li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Contact.html">EXPO TEAM</a></li>
         </ul>
       </nav>
 
@@ -120,19 +122,18 @@
       <button class="hamburger" id="hamburger-icon">☰</button>
       <ul class="nav-list">
         <li>
-          <a href="halohalo.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li><a href="About.html">About</a></li>
-        <li><a href="Menu.html" style="color: var(--accent-color)">Menu</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Menu.html" style="color: var(--accent-color)">Product</a></li>
+        <li><a href="Contact.html">EXPO TEAM</a></li>
       </ul>
     </header>
-
+   <main>
     <section class="menu-section">
       <div class="menu-content">
-        <h2>Our Special Menu</h2>
         <div class="menu-item">
-          <h3>Halo Delights</h3>
+          <h3>Halo Delight</h3>
           <p>
             Enjoy our special mix of choco milk, sweet bananas, beans, pinipig,
             sago, gulaman, sugar, and chocolate syrup. a tasty and cool treat
@@ -157,8 +158,31 @@
         />
       </div>
     </section>
-
+  </main>
     <footer>
+      <div class="foot">
+        <div class="contact-icon">📍</div>
+        <div class="contact-text">
+          STI College Angeles 2021 T. Aguas St., Angeles, Pampanga
+        </div>
+      </div>
+
+      <div class="foot">
+        <div class="contact-icon">📞</div>
+        <div class="contact-text">
+          <a href="tel:+63-09915112299">+63-09915112299</a>
+        </div>
+      </div>
+
+      <div class="foot">
+        <div class="contact-icon">📧</div>
+        <div class="contact-text">
+          <a href="mailto:halodelightexpo@gmail.com"
+            >halodelightexpo@gmail.com</a
+          >
+        </div>
+      </div>
+      <br>
       <p>© 2025 Halo Delight. All rights reserved.</p>
     </footer>
     <script src="halo.js"></script>
