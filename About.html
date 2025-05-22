@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Halo Delight</title>
+    <title>Halo Delight</title>
+  
+
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -61,38 +63,46 @@
       .about-content h2{
         text-align: center;
       }
+      #sakura {
+        background-image: url("sakura5.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     </style>
   </head>
-  <body>
+  <body id="sakura">
     <header>
-      <a href="halohalo.html" class="logo"> Halo Delight </a>
+      <a href="index.html" class="logo"> Halo Delight </a>
     
       <!-- Desktop Nav -->
       <nav class="desktop-nav">
         <ul>
-          <li><a href="halohalo.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="About.html" style="color: var(--accent-color)">About</a></li>
-          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Menu.html">Product</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
       </nav>
     
       <!-- Mobile Nav -->
+      
+
       <button class="hamburger" id="hamburger-icon">☰</button>
       <ul class="nav-list">
-        <li><a href="halohalo.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="About.html" style="color: var(--accent-color)">About</a></li>
-        <li><a href="Menu.html">Menu</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Menu.html">Product</a></li>
+        <li><a href="Contact.html">EXPO TEAM</a></li>
       </ul>
     </header>
     
     <main>
       <section class="about-section">
         <div class="about-content">
-          <h2>About Halo-Halo</h2>
-
           <div class="highlight-box">
+            <h2>About Halo-Halo</h2>
+
             <i>
               Experience our unique take on the classic Filipino dessert. Our
               Halo-Halo stands out with its perfect blend of traditional
@@ -117,6 +127,29 @@
     </main>
 
     <footer>
+      <div class="foot">
+        <div class="contact-icon">📍</div>
+        <div class="contact-text">
+          STI College Angeles 2021 T. Aguas St., Angeles, Pampanga
+        </div>
+      </div>
+
+      <div class="foot">
+        <div class="contact-icon">📞</div>
+        <div class="contact-text">
+          <a href="tel:+63-09915112299">+63-09915112299</a>
+        </div>
+      </div>
+
+      <div class="foot">
+        <div class="contact-icon">📧</div>
+        <div class="contact-text">
+          <a href="mailto:halodelightexpo@gmail.com"
+            >halodelightexpo@gmail.com</a
+          >
+        </div>
+      </div>
+      <br>
       <p>© 2025 Halo Delight. All rights reserved.</p>
     </footer>
 
