@@ -14,22 +14,22 @@
 
 @keyframes backgroundColorCycle {
   0% {
-    background-color: rgb(251, 213, 178);
+    background-color: rgb(214, 177, 142);
   }
   20% {
-    background-color: rgb(253, 251, 187);
+    background-color: rgb(194, 191, 119);
   }
   40% {
-    background-color: rgb(240, 225, 147);
+    background-color: rgb(177, 165, 104);
   }
   60% {
-    background-color: rgb(238, 206, 158);
+    background-color: rgb(228, 195, 147);
   }
   80% {
-    background-color: rgb(246, 239, 180);
+    background-color: rgb(211, 174, 119);
   }
   100% {
-    background-color: rgb(251, 213, 178);
+    background-color: rgb(214, 177, 142);
   }
 }
 
@@ -137,7 +137,6 @@ section {
 
 .hero-content h2,
 .about-content h2,
-.menu-content h2,
 .contact-content h2 {
   font-size: 3rem;
   color: var(--primary-color);
@@ -261,9 +260,96 @@ footer {
 .nav-list {
   display: none;
 }
+.foot{
+  display: table-cell;
+  text-align: center;
+  padding: 1rem;
+  padding-left: 16rem;
+  align-items: center;
+  transition: var(--transition);
+}
+.contact-section {
+  padding: 8rem 5% 4rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-content {
+  color: #a0522d;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.contact-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+  padding-right: 23px;
+  padding-left: 200px;
+  margin: 1rem 0;
+  background: #eff2f4;
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.contact-item:hover {
+  transform: translateX(10px);
+  background: #f0f2f5;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+  min-width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary);
+  border-radius: 50%;
+}
+
+.contact-text {
+  color: var(--text);
+  font-size: 12px;
+}
+
+.contact-text a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact-text a:hover {
+  color: #a0522d;
+}
 
 /* Mobile styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   .desktop-nav {
     display: none;
   }
@@ -289,6 +375,19 @@ footer {
     z-index: 999;
     transition: all 0.4s ease-in-out;
     animation: slideDown 0.3s ease-out;
+  }
+
+  .contact-item {
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+    padding-right: 100px;
+    padding-left: 75px;
+    margin: 1rem 0;
+    background: #eff2f4;
+    border-radius: 12px;
+    transition: var(--transition);
   }
 
   /* Optional subtle slide-down animation */
@@ -329,7 +428,14 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-
+  .about-section {
+    flex-direction: column-reverse;
+  }
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
   .logo {
     font-size: 1.5rem;
   }
@@ -341,16 +447,18 @@ footer {
     font-size: 2rem;
   }
 
-  .menu-section {
-    text-align: center;
-  }
 
   .image-wrapper {
     order: 2; /* Ensures image still appears second */
   }
 
   .menu-content {
+    order: 3;
+  }
+  .menu-section .our {
     order: 1;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .menu-image {
@@ -364,5 +472,13 @@ footer {
   .nav-list li a {
     padding: 1rem 2rem;
     font-size: 1.2rem;
+  }
+  .foot{
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    padding-left: 1rem;
+    align-items: center;
+    transition: var(--transition);
   }
 }
