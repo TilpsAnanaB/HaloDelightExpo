@@ -379,7 +379,6 @@ footer {
 
   .contact-item {
     display: flex;
-    text-align: center;
     gap: 1rem;
     padding: 1rem;
     margin: 1rem 0;
