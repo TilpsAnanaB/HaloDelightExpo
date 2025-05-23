@@ -200,9 +200,9 @@ img:hover {
 
 footer {
   background: var(--background-light);
-  padding: 2rem;
+  padding: 3rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--text-dark);
   margin-top: 4rem;
 }
@@ -264,7 +264,7 @@ footer {
   display: table-cell;
   text-align: center;
   padding: 1rem;
-  padding-left: 16rem;
+  padding-left: 5.5rem;
   align-items: center;
   transition: var(--transition);
 }
@@ -303,13 +303,13 @@ footer {
   text-align: center;
 }
 
-.contact-item {
+.contact-itemss {
   display: flex;
   text-align: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1em;
   padding-right: 23px;
-  padding-left: 200px;
+  padding-left: 110px;
   margin: 1rem 0;
   background: #eff2f4;
   border-radius: 12px;
@@ -335,7 +335,7 @@ footer {
 
 .contact-text {
   color: var(--text);
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .contact-text a {
@@ -377,8 +377,9 @@ footer {
     animation: slideDown 0.3s ease-out;
   }
 
-  .contact-item {
+  .contact-itemss {
     display: flex;
+    text-align: center;
     gap: 1rem;
     padding: 1rem;
     margin: 1rem 0;
@@ -478,4 +479,10 @@ footer {
     align-items: center;
     transition: var(--transition);
   }
+  .contact-text{
+    font-size: 12px;
+  }
+  .highlight-box h2{
+        font-size: 25px;
+      }
 }
